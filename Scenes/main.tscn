@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://c38uamapiywvf"]
+
+[ext_resource type="Script" uid="uid://do53ik2xjnvvt" path="res://Scripts/main.gd" id="1_8gbba"]
+[ext_resource type="Texture2D" uid="uid://cyk4n5jdtb73v" path="res://icon.svg" id="2_jjvhh"]
+[ext_resource type="Texture2D" uid="uid://o25h186egnyo" path="res://Assets/ChatGPT Image 3 jun 2025, 02_14_13 a.m. (1).jpg" id="3_kry3j"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0xm2m"]
+radius = 83.006
+
+[node name="Main" type="Node2D"]
+position = Vector2(549, 47)
+script = ExtResource("1_8gbba")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("CircleShape2D_0xm2m")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+texture = ExtResource("2_jjvhh")
+
+[node name="ChatGptImage3Jun2025,021413A_m_(1)" type="Sprite2D" parent="."]
+position = Vector2(34, 315)
+texture = ExtResource("3_kry3j")
+
+[node name="Camera2D" type="Camera2D" parent="ChatGptImage3Jun2025,021413A_m_(1)"]
